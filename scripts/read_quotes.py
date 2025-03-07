@@ -13,8 +13,8 @@ def get_random_quote():
         quote_row = df.sample(n=1).iloc[0]
 
         # Extract the quote and movie name
-        quote = quote_row['Quote']
-        movie = quote_row['Movie']
+        quote = quote_row['quote']
+        movie = quote_row['movie']
 
         return f"🎬 {quote} \n- {movie}"
 
