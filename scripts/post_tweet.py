@@ -1,7 +1,10 @@
 import tweepy
 import os
 from dotenv import load_dotenv
-from scripts.read_quotes import get_random_quote
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))  # Add scripts directory to Python path
+from read_quotes import get_random_quote
 
 # Load .env file (only needed for local testing)
 if os.path.exists(".env"):
